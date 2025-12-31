@@ -1,0 +1,70 @@
+/* Floating button container */
+#fb-float-btn-container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999999;
+}
+
+/* Floating Button */
+#fb-float-btn {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+#fb-float-btn:hover {
+  background-color: #0d5cd2;
+}
+
+
+/* Menu box */
+#fb-float-menu {
+  list-style: none;
+  padding: 8px 0;
+  margin: 8px 0 0 0;
+  background: white;
+  border-radius: 10px;
+  width: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+  display: none;
+}
+
+#fb-float-menu li {
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s;
+}
+
+#fb-float-menu li:hover {
+  background: #f0f0f0;
+}
+
+#fb-float-menu li svg {
+  width: 18px;
+  height: 18px;
+  fill: #1877f2;
+}
+
+/* AddFriend box */
+#fb-addfriend-container {
+  width: 300px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 999999;
+}

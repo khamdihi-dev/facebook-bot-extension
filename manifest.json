@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ZARA",
+  "version": "1.0",
+  "description": "ZARA IS EXTENSION FOR FACEBOOK PRO VERSION",
+  "permissions": ["activeTab", "scripting","storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["zara/*"],
+      "matches": ["*://*.facebook.com/*"]
+    }
+  ]
+}
